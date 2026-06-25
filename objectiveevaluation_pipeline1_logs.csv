@@ -1,0 +1,9 @@
+Modules,Models/Device,Parameter,Size on Disk,VRAM requirement (Approx.),Role
+Mic/Speaker,AB 13X USB Audio,,36.2 MB,,Receives user input and plays back output audio
+VAD,"Silero VAD
+",309k,1.0-1.8MB,,Helps filter out noise and detect user voice
+ASR,whisper-large-v3-turbo,"809 M
+(32 layers encoder, 4 layers decoder)",1.6 GB,~6 GB,Speech-2-Text multilingual ASR to detect language (en/hi) get transcript of input audio
+Reasoning,Nemotron-4-Mini-Hindi-4B-Instruct,4.19B,8.4 GB,"~9.5 GB to 10 GB
+",Multilingual text reasoning model
+TTS,Coqui-xtts-v2,470M,2.1 GB,Minimum 4 GB,"Zero-shot voice cloned multilingual TTS supporting 17 languages (incl English, Hindi)"
