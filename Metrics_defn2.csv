@@ -1,0 +1,16 @@
+Category,Metric Heading,Brief Definition,Core Mathematics / Proxy Calculation,R&I Role in Multimodal Pipeline
+Latency,UPL_sec,Unified Processing Latency. Core processing pass time of Gemma.,tGemma_complete​−tGemma_start​,"Captures integrated ingestion, transcription, and reasoning."
+Latency,TTFA_sec,Time to First Audio. System gap interval using tag parsing structures.,tfirst_audio_chunk​−tVAD_endpoint​,Tracks localized driver delay and multi-variable extraction costs.
+Latency,TTS_total_time_sec,Wall-clock execution tracking of the active output voice module.,tTTS_complete​−tTTS_start​,Baseline comparison metric against traditional cascade models.
+Latency,E2E_Latency_sec,Complete interactive turnaround lifetime bounds for the turn.,tTTS_complete​−tVAD_endpoint​,Tracks unified system cost directly processing multi-modal arrays.
+Volume Counts,Input_Audio_Tokens,Physical token allocation arrays entering Gemma's native encoder.,Encoder Frame Step (400 samples)Audio Samples Captured​,Quantifies native cross-modal sound units fed to the LM window.
+Volume Counts,Transcribed_Text_Tokens,Sub-word representation extracted from the <transcript> variable.,Word Count×Language Factor (1.33 / 1.5),Measures the lexical weight of the unified model's implicit hearing.
+Volume Counts,Response_Lang_Tokens,Byte/token allocation footprint of the model's <response_lang> tag.,Token Length of Language Token Label,Isolates the control code volume utilized to route language parameters.
+Volume Counts,Output_Audio_Tokens,Inferred frame representation of generated voice files.,Estimated Spoken Duration (sec)×50 frames/sec,Establishes volume parity bounds with Pipeline 1.
+Normalized Latency,Gemma_Core_TPS,Text generation token velocity mapping all three variables combined.,UPL_secTranscript Tok+Response Tok+Lang Tok​,Core indicator of multi-modal generation throughput efficiency.
+Normalized Latency,Input_Audio_Ingestion_Rate_per_sec,Processing scale showing audio consumption capabilities.,UPL_secInput_Audio_Tokens​,Analyzes cross-modal ingestion performance directly over the system core.
+Normalized Latency,TTS_Characters_per_sec,Voice engine parameter density tracker.,TTS_total_time_secTotal Raw Response Characters​,Measures downstream text-to-speech synthesis throughput metrics.
+Normalized Latency,RTF,Real-Time Factor index tracking playback generation speeds.,Estimated Spoken Duration (sec)TTS_total_time_sec​,Production metric verifying live multi-modal pipeline deployment capability.
+Normalized Latency,CMTT,Cross-Modal Token-to-Token Rate. Multi-modal efficiency rating.,Input_Audio_Tokens×TTFA_secOutput_Audio_Tokens​,Ultimate R&I Metric: Rates physical audio output tokens generated per input audio token per second of wait-time.
+ASR Performance,Turn_WER,Word Error Rate derived via parsing the native text transcript.,Total Words in Ground-Truth ScriptSubstitutions+Deletions+Insertions​,Evaluates Gemma's multi-modal implicit transcription accuracy.
+ASR Performance,Turn_CER,Character Error Rate tracking structural spelling precision.,Total Characters in Ground-Truth ScriptCharacter-level (Sub + Del + Ins)​,Examines phonetic spelling precision for code-switched Hinglish.
